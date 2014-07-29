@@ -510,4 +510,21 @@ function wp_bootstrap_wp_title( $title, $sep ) {
 }
 add_filter( 'wp_title', 'wp_bootstrap_wp_title', 10, 2 );
 
+
+// add shortcode [tktitle][/tktitle]
+function tkShort ($args,$content) {
+  return '<span class="title">' .$content. '</span>';
+}
+
+add_shortcode('tktitle','tkShort');
+
+// add shortcode QnA
+function tkQ ($args, $content){
+  return '<div class="question">'.$content.'</div>';
+}
+add_shortcode('qq','tkQ');
+
+function tkA ($args, $content){
+  return '<div class="answer>'.$content.'</div>';
+}
 ?>

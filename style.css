@@ -19,6 +19,10 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+p {
+  font-size: 20px;
+}
+
 .navbar-default {
 	background-color: #263F50;
 	color:white;
@@ -68,6 +72,7 @@ body {
   float: none;
 }
 #sidebar ul li a {
+  transition: background-color 0.7s ease;
 	font-family: 'Titillium Web', sans-serif;
 	color: white;
 	font-weight: 600;
@@ -79,23 +84,29 @@ body {
 #sidebar ul li a:hover{
 	background: #fa5c5c;
 }
-
-
 #content {
 	padding:20px;
 }
-
 .navbar-fixed-top {
 	display: none;
 }
-
-
+.info a {
+  color:white;
+}
+.info a:hover{
+  color:#00AB97;
+}
+#info-img{
+  transition: background-color 0.9s ease;
+}
 
 /* main */
 
 #main {
 	padding-left: 70px;
+  color: ;
 }
+
 #main article {
 	margin-bottom: 18px;
 	border-bottom: 1px solid #eeeeee;
@@ -112,17 +123,104 @@ h1.page-title {
 	text-align: center;
 	padding-bottom: 25px;
 }
-
 span.title {
-	background: #00C7B1;
-	color: white;
+  font-family: 'Titillium Web', sans-serif;
 	padding: 10px;
 	display: block;
+  font-size:21px;
+  font-weight: bold;
+  background: lightgray;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+a, a:hover {
+  text-decoration: none;
+}
+
+.work {
+  border-radius: 5px;
+  padding: 10px;
+  border: 1px solid lightgray;
+  margin-top: 10px;
+}
+.work-title, .work-period, .work-role {
+  font-size: 20px;
+  font-family: 'Titillium Web', sans-serif;
+  padding-left: 0px;
+  padding-bottom: 10px;
+}
+
+.work-title{
+}
+.work-period{
+}
+.work-role{
+  border-bottom: solid 1px lightgray;
+}
+.work-description, .work-description p{
+  padding-top: 5px;
+  font-size: 16px;
+}
+span.tk {
+  padding:5px;
+  border-radius: 5px;
+  background-color: lightgray;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+code {
+  padding: 2px 4px;
+  font-size: 90%;
+  background-color: #f9f2f4;
+  white-space: nowrap;
+  border-radius: 4px;
+  margin-right: 5px;
+  color: #6B7B80;
+}
+
+/*5 sec look*/
+
+.five-sec-look {
+  padding:10px;
+  background-color: rgba(0,0,0,0.07);  border-radius: 6px;
+  margin:3px;
+}
+section.post_content div.row .col-md-4:nth-child(3n+1){
+  clear:both;
+}
+.five-sec-look .five-title{
+  font-size: 21px;
+  font-weight: 600;
+  color: #00C7B1;
+  font-family: 'Titillium Web', sans-serif;
+}
+.five-sec-look span {
+  font-weight: 700;
+  font-size: 30px;
 }
 
 
+/*contact*/
 
+input, textarea, select, .uneditable-input {
+  margin-bottom: 0;
+  border: none;
+  background-color: #00C7B1;
+  color: white;
+  padding: 5px 20px;
+}
 
+input:focus, textarea:focus {
+  background-color: #00AB97;
+  border-color: none;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  outline: -webkit-focus-ring-color auto 0px;
+}
+.wpcf7-form {
+  margin: 0 auto;
+  display: table;
+}
 
 
 /* collapsed sidebar styles */

@@ -61,7 +61,7 @@
 
         <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
         <div class="info clearfix">
-			<div id="name" class="t-center">Teo Kim</div>
+			<div id="name" class="t-center"><a href="<?php echo home_url(); ?> ">Teo Kim</a></div>
 			<div id="info-img" class="t-center">
 				<img src="<?php echo get_template_directory_uri(); ?>/images/teo.png" alt="teo kim image">
 			</div>
