@@ -527,4 +527,5 @@ add_shortcode('qq','tkQ');
 function tkA ($args, $content){
   return '<div class="answer>'.$content.'</div>';
 }
+add_shortcode('aa','tkA');
 ?>

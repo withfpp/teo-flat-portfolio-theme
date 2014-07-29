@@ -209,7 +209,9 @@ input, textarea, select, .uneditable-input {
   color: white;
   padding: 5px 20px;
 }
-
+form p{
+  color:#92A3A8;
+}
 input:focus, textarea:focus {
   background-color: #00AB97;
   border-color: none;
