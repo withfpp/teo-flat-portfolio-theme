@@ -1,0 +1,178 @@
+/*
+Theme Name: Teo theme for portfolio
+Theme URI: http://teokim-dev.com
+Description: A simple responsive theme based on the Bootstrap framework. Includes multiple page templates, two different sidebars and a theme options panel.
+Version: 1.0
+Author: Teo Kim
+Author URI: http://teokim-dev.com
+Tags: black, white, one-column, two-columns, flexible-width, custom-background, custom-colors, custom-menu, full-width-template, theme-options
+License: GNU General Public License v2.0 & Apache License 2.0
+License URI: http://www.gnu.org/licenses/gpl-2.0.html http://www.apache.org/licenses/LICENSE-2.0
+*/
+
+/* HEADS UP: Everything that you will normally find here can be found in the library/less/wp.less */
+@import url(http://fonts.googleapis.com/css?family=Titillium+Web:400,600,700);
+
+
+body {  
+  background-color: white;
+  -webkit-font-smoothing: antialiased;
+}
+
+.navbar-default {
+	background-color: #263F50;
+	color:white;
+}
+.t-center{
+	text-align: center;
+}
+.text-center {
+  padding-top: 20px;
+}
+.col-xs-12 {
+  background-color: #fff;
+}
+#sidebar {
+	font-family: 'Titillium Web', sans-serif;
+	color: white;
+	background-color:#1AC8B0;
+  	height: 100%;
+  	padding:20px;
+  	border-radius: 6px;
+}
+#name {
+	font-family: 'Titillium Web', sans-serif;
+	font-weight: 600;
+	font-size:45px;
+}
+#info {
+	font-size: 18px;
+	margin-bottom: 20px;
+
+}
+#info-img {
+	margin:0 auto;
+}
+#info-img img{
+	width:60%;
+	border-radius: 100%;
+}
+
+
+#sidebar .nav {
+  width: 95%;
+}
+#sidebar li {
+
+  border:0 #f2f2f2 solid;
+  float: none;
+}
+#sidebar ul li a {
+	font-family: 'Titillium Web', sans-serif;
+	color: white;
+	font-weight: 600;
+	background-color: #01AC96;
+	display: block;
+	margin-bottom: 10px;
+	border-radius: 6px;
+}
+#sidebar ul li a:hover{
+	background: #fa5c5c;
+}
+
+
+#content {
+	padding:20px;
+}
+
+.navbar-fixed-top {
+	display: none;
+}
+
+
+
+/* main */
+
+#main {
+	padding-left: 70px;
+}
+#main article {
+	margin-bottom: 18px;
+	border-bottom: 1px solid #eeeeee;
+	padding: 0 0 9px;
+	top: -50px;
+	position: relative;
+}
+h1.page-title {
+	font-size: 45px;
+	text-transform: uppercase;
+	font-family: 'Titillium Web', sans-serif;
+	font-weight: 700;
+	color: #49c9af;
+	text-align: center;
+	padding-bottom: 25px;
+}
+
+span.title {
+	background: #00C7B1;
+	color: white;
+	padding: 10px;
+	display: block;
+}
+
+
+
+
+
+
+/* collapsed sidebar styles */
+@media screen and (max-width: 767px) {
+
+  .navbar-fixed-top {
+  	display: block;
+  }
+
+  .row-offcanvas {
+    position: relative;
+    -webkit-transition: all 0.25s ease-out;
+    -moz-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out;
+  }
+  .row-offcanvas-right
+  .sidebar-offcanvas {
+    right: -41.6%;
+  }
+
+  .row-offcanvas-left
+  .sidebar-offcanvas {
+    left: -41.6%;
+  }
+  .row-offcanvas-right.active {
+    right: 41.6%;
+  }
+  .row-offcanvas-left.active {
+    left: 41.6%;
+  }
+  .sidebar-offcanvas {
+    position: absolute;
+    top: 0;
+    width: 41.6%;
+  }
+  #sidebar {
+    padding-top:0;
+  }
+  .navbar-default .navbar-toggle {
+  	background-color: #1AC8B0;
+  	border: none;
+  }
+  .navbar-default .navbar-toggle:hover {
+  	background-color: #01AC96;
+  }
+  #main {
+	padding-left: 10px;
+  }
+  .foot {
+  	padding-left: 10px;
+  }
+}
+
