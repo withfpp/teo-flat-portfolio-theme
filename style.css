@@ -224,6 +224,24 @@ input:focus, textarea:focus {
   display: table;
 }
 
+#wrap {
+}
+#top-link  {
+  display:none; 
+  position:fixed; 
+  right:10%; 
+  margin-left:200px; 
+  bottom:2px; 
+  color:#FFF; 
+  font-weight:bold; 
+  text-decoration:none; 
+  border:none;
+  background:#00AB97; 
+  padding:20px; 
+  opacity:0.7; 
+}
+
+
 
 /* collapsed sidebar styles */
 @media screen and (max-width: 767px) {

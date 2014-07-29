@@ -59,7 +59,7 @@
 
 		<!-- sidebar -->
 
-        <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+        <div class="col-xs-6 col-sm-3 sidebar-offcanvas sticky" id="sidebar" role="navigation">
         <div class="info clearfix">
 			<div id="name" class="t-center"><a href="<?php echo home_url(); ?> ">Teo Kim</a></div>
 			<div id="info-img" class="t-center">

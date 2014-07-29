@@ -34,11 +34,22 @@
 		
 		<?php wp_footer(); // js scripts are inserted using this function ?>
 
-
+	<div id="wrap">
+ 		<a href="#top" id="top-link">Back to Top</a>
+	</div>
 	<script>
 	jQuery(document).ready(function() {
 	  jQuery('[data-toggle=offcanvas]').click(function() {
 	    jQuery('.row-offcanvas').toggleClass('active');
+	  });
+
+	  jQuery('#top-link').topLink({
+   		min: 500,
+    	fadeSpeed: 100
+	  });
+	  //smoothscroll
+	  jQuery('#top-link').click(function(r) {    
+	    jQuery("html, body").animate({ scrollTop: 0 }, 300);
 	  });
 	});
 	</script>
